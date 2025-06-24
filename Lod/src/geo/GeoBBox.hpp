@@ -78,12 +78,15 @@ struct GeoPoint {
 };
 
 // 纯函数：从点集合计算包围盒
-[[nodiscard]] std::optional<GeoBBox> computeBounds(std::span<const GeoPoint> points) noexcept;
+[[nodiscard]] std::optional<GeoBBox> computeBounds(const std::vector<GeoPoint>& points) noexcept;
 
 // 纯函数：计算两点间距离（米）
 [[nodiscard]] double distanceMeters(const GeoPoint& p1, const GeoPoint& p2) noexcept;
 
 // 纯函数：包围盒面积（平方米）
 [[nodiscard]] double areaSquareMeters(const GeoBBox& bbox) noexcept;
+
+// 计算多个地理点的边界框
+GeoBBox computeBounds(const std::vector<GeoPoint>& points);
 
 } // namespace lod::geo 

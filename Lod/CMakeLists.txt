@@ -15,8 +15,9 @@ find_package(nlohmann_json CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 find_package(spdlog CONFIG REQUIRED)
 find_package(Catch2 3 CONFIG REQUIRED)
-find_package(tinygltf CONFIG REQUIRED)
+find_path(TINYGLTF_INCLUDE_DIRS "tiny_gltf.h")
 find_package(TBB CONFIG REQUIRED)
+find_package(cxxopts CONFIG REQUIRED)
 
 # 编译选项
 if(MSVC)

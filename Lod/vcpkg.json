@@ -16,6 +16,7 @@
     "spdlog",
     "catch2",
     "tinygltf",
-    "tbb"
+    "tbb",
+    "cxxopts"
   ]
 } 

@@ -25,6 +25,7 @@ add_library(lod_io
 
 target_include_directories(lod_io PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
+    ${TINYGLTF_INCLUDE_DIRS}
 )
 
 target_link_libraries(lod_io PUBLIC
@@ -33,7 +34,6 @@ target_link_libraries(lod_io PUBLIC
     draco::draco
     GDAL::GDAL
     nlohmann_json::nlohmann_json
-    tinygltf::tinygltf
     fmt::fmt
     spdlog::spdlog
 )
