@@ -1,0 +1,21 @@
+{
+  "name": "lod-generator",
+  "version": "0.1.0",
+  "description": "LOD generator for PLY meshes with geographic tiling",
+  "dependencies": [
+    {
+      "name": "osg",
+      "features": ["plugins", "tools"]
+    },
+    "meshoptimizer",
+    "draco",
+    "proj",
+    "gdal",
+    "nlohmann-json",
+    "fmt",
+    "spdlog",
+    "catch2",
+    "tinygltf",
+    "tbb"
+  ]
+} 
